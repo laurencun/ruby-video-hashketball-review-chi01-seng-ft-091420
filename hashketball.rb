@@ -142,6 +142,7 @@ end
 
 def num_points_scored(player)
   #iterate through game_hash to player_name
+  #i did not add game as a variable here.. 
    game_hash.each do |team , team_dets|
     team_dets[:players].each do |dets|
       dets.each do |key, value|
