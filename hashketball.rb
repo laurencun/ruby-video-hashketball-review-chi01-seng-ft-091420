@@ -219,3 +219,30 @@ def big_shoe_rebounds
   end 
  rebounds 
 end
+
+def most_points_scored
+ mvp = 0 
+  game_hash.each do |team, team_dets|
+    team_dets[:players].each do |player_dets|
+      if player_dets[:points] > most_points 
+        mvp = player_dets[:player_name]
+      end
+    end
+  end 
+ mvp
+end
+
+def winning_team
+  game_hash.each do |team, team_dets|
+  end 
+end 
+
+def player_with_longest_name
+ longest_name = ""
+ game_hash.each do |team, team_dets|
+   if team_dets[:player_name].length > longest_name.length
+     longest_name = team_dets[:player_name]
+   end 
+ end
+ longest_name
+end 
